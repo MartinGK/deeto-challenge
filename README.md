@@ -22,21 +22,17 @@ A modern, interactive chat assistant built with Next.js, TypeScript, and Tailwin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/chat-assistant.git
-   cd chat-assistant
+   git clone git@github.com:MartinGK/deeto-challenge.git
+   cd deeto-challenge
    ```
 
 2. Install dependencies:
    ```bash
-   npm install
-   # or
    yarn install
    ```
 
 3. Run the development server:
    ```bash
-   npm run dev
-   # or
    yarn dev
    ```
 
@@ -47,14 +43,15 @@ A modern, interactive chat assistant built with Next.js, TypeScript, and Tailwin
 [Add brief usage instructions or screenshots here]
 
 ## Configuration
-
-[Add configuration options and customization details here]
+you will need to create a .env file and add the following:
+```
+DEETO_VENDOR_ID=your_vendor_id
+```
 
 ## Deployment
 
-This application can be easily deployed on Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2Fchat-assistant)
+The application is deployed on Vercel.
+[Link to the application](https://deeto-challenge.vercel.app/)
 
 ## Contributing
 
@@ -70,3 +67,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [shadcn/ui](https://ui.shadcn.com/) for UI components
 - [Zustand](https://github.com/pmndrs/zustand) for state management
+- [Lucide](https://lucide.dev/) for icons
+- [Vercel](https://vercel.com/) for hosting
+- [Deeto](https://deeto.com/) for the chatbot API
+
