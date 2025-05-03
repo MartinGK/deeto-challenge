@@ -13,8 +13,6 @@ export default function ChatMessagesList({ messages }: ChatMessagesListProps) {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  console.log(messages);
-
   return (
     <div className="space-y-4">
       {messages.map((message, index) => (

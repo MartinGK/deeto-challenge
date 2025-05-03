@@ -81,10 +81,20 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "typing": {
+          from: { width: "0" },
+          to: { width: "100%" },
+        },
+        "blink": {
+          from: { borderColor: "transparent" },
+          "50%": { borderColor: "var(--primary)" },
+          to: { borderColor: "transparent" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "typing": "typing 2.5s steps(40, end), blink 0.75s step-end infinite",
       },
     },
   },

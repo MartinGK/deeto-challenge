@@ -1,0 +1,97 @@
+/* Typewriter animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--primary, #ac4147); }
+}
+
+@keyframes expand-horizontal {
+  from { 
+    width: auto; 
+    max-width: 80%; 
+  }
+  to { 
+    width: 100%; 
+    max-width: 100%; 
+  }
+}
+
+@keyframes expand-vertical {
+  from { 
+    height: auto; 
+    max-height: 20vh; 
+  }
+  to { 
+    height: 100vh; 
+    max-height: 100vh; 
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary, #ac4147) }
+}
+
+.animate-typing {
+  animation: typing 2.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.typewriter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  border-right: 0.15em solid var(--primary, #ac4147);
+  animation: 
+    typewriter 2.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.expand-horizontal {
+  animation: expand-horizontal 1s ease-out forwards;
+  animation-delay: 3s;
+}
+
+.expand-vertical {
+  animation: expand-vertical 1s ease-out forwards;
+  animation-delay: 4s;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 5s;
+} 

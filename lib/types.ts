@@ -4,6 +4,7 @@ export interface Message {
   content?: string;
   status?: 'loading' | 'error' | 'done';
   icon?: React.ReactNode;
+  options?: string[];
 }
 
 export interface ChatSettings {

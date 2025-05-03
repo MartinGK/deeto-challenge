@@ -53,11 +53,11 @@
     /* Custom chat theme variables */
     --primary: #ac4147;
     --primary-foreground: 210 40% 98%;
-    --accent: #f88863;
+    --accent: #ffc400;
     --accent-foreground: 222.2 47.4% 11.2%;
     --dark: #411f2d;
     --light: #ffc27f;
-    --background-color: #ffe29a;
+    --background-color: #ffc400;
     --card-shadow: 0 8px 24px rgba(65, 31, 45, 0.15);
     --transition-speed: 0.3s ease;
   }
@@ -140,4 +140,15 @@
   color: var(--dark, #411f2d);
   width: 24px;
   height: 24px;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  animation: blink-cursor 0.7s infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 } 

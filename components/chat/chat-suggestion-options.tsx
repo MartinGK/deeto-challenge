@@ -1,16 +1,14 @@
-import { ChatSettings } from '@/lib/types';
-
-interface ChatIntroOptionsProps {
+interface ChatSuggestionOptionsProps {
   introOptions: string[];
   onSelectOption: (option: string) => void;
   isLoading: boolean;
 }
 
-export default function ChatIntroOptions({
+export default function ChatSuggestionOptions({
   introOptions,
   onSelectOption,
   isLoading
-}: ChatIntroOptionsProps) {
+}: ChatSuggestionOptionsProps) {
   if (!introOptions.length) return null;
 
   return (
