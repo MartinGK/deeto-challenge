@@ -38,10 +38,6 @@ A modern, interactive chat assistant built with Next.js, TypeScript, and Tailwin
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Usage
-
-[Add brief usage instructions or screenshots here]
-
 ## Configuration
 you will need to create a .env file and add the following:
 ```
