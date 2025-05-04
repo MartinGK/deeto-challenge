@@ -77,7 +77,6 @@ export function useChatLogic() {
 
           const lastMessage = chatSettings.data?.settings?.messages[chatSettings.data?.settings?.messages?.length - 1];
 
-          console.log({lastMessage});
           if(lastMessage?.options?.length) {
             setSuggestedMessages(lastMessage.options);
           }

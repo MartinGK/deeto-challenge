@@ -38,10 +38,6 @@ A modern, interactive chat assistant built with Next.js, TypeScript, and Tailwin
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Usage
-
-[Add brief usage instructions or screenshots here]
-
 ## Configuration
 you will need to create a .env file and add the following:
 ```
@@ -53,14 +49,6 @@ DEETO_VENDOR_ID=your_vendor_id
 The application is deployed on Vercel.
 [Link to the application](https://deeto-challenge.vercel.app/)
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Add license information here]
-
 ## Acknowledgments
 
 - [Next.js](https://nextjs.org/) for the React framework
@@ -69,5 +57,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [Zustand](https://github.com/pmndrs/zustand) for state management
 - [Lucide](https://lucide.dev/) for icons
 - [Vercel](https://vercel.com/) for hosting
-- [Deeto](https://deeto.com/) for the chatbot API
+- [Deeto](https://deeto.com/) for the chatbot API & colors
 
