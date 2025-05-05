@@ -1,6 +1,5 @@
 'use server'
 
-import { revalidatePath } from 'next/cache';
 import { ChatSettings, ChatResponse } from '@/lib/types';
 import { fetchChatbotSettings, sendChatMessage } from '../api/chat-api';
 

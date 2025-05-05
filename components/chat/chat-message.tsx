@@ -89,7 +89,7 @@ export default function ChatMessage({ message }: ChatMessageProps) {
           </div>
         )}
         {!isLoading && (
-          <p>
+          <p className="text-left">
             {isUser || isError ? message.content : displayedContent}
             {isTyping && !isUser && !isLoading && (
               <span className="typing-cursor">|</span>

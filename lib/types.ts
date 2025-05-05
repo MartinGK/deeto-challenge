@@ -37,4 +37,7 @@ export interface ChatResponse {
   id: string;
   message: string;
   done: boolean;
+  data: {
+    messages: Message[]
+  }
 } 

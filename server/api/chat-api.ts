@@ -34,7 +34,7 @@ export async function fetchChatbotSettings(): Promise<ChatSettings> {
   );
 }
 
-export async function sendChatMessage(message: string, useAsync = true): Promise<ChatResponse> {
+export async function sendChatMessage(message: string, useAsync = false): Promise<ChatResponse> {
   if (!VENDOR_ID) {
     throw new Error('DEETO_VENDOR_ID is not defined');
   }

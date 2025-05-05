@@ -125,7 +125,7 @@ export function useChatLogic() {
       addMessage(tempAssistantMessage);
 
       const response = await sendMessage(content);
-      updateMessage(assistantMessageId, response.message);
+      updateMessage(assistantMessageId, response.data.messages.find((msg: Message) => msg.role === 'assistant')?.content || '');
     } catch (error) {
       setError(error instanceof Error ? error.message : 'Failed to send message');
       const lastMessage = messages[messages.length - 1];

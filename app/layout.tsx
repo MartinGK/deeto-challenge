@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="w-screen h-screen bg-[var(--background-color)]">
-      <body className={`${inter.className} w-screen h-screen p-4`}>
+    <html lang="en" className="w-screen h-screen">
+      <body className={`${inter.className} w-screen h-screen`}>
         {children}
       </body>
     </html>
